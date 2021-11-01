@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <ResearchProjectDef>
+    <defName>Broms_ResearchNeuroformer</defName>
+    <label>Psylink Neuroformer</label>
+    <description>Manufacture psylink neuoformers of your own to create psycasters.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>Fabrication</li>
+    </prerequisites>
+    <hiddenPrerequisites>
+      <li>Machining</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>4.00</researchViewY>
+  </ResearchProjectDef>
+
+   <ResearchProjectDef>
+    <defName>Broms_ResearchPsytrainers</defName>
+    <label>Psytrainer</label>
+    <description>Manufacture psytrainers of your own for training psycasts.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>Fabrication</li>
+    </prerequisites>
+    <hiddenPrerequisites>
+      <li>Machining</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>Broms_ResearchNeurotrainers</defName>
+    <label>Psylink Neurotrainer</label>
+    <description>Manufacture neurotrainers of your own for training skills.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>Fabrication</li>
+    </prerequisites>
+    <hiddenPrerequisites>
+      <li>Machining</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>4.40</researchViewY>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>Broms_ResearchFSFPsytrainers</defName>
+    <label>FSF Psytrainer</label>
+    <description>Manufacture FSF psytrainers of your own for training psycasts beyond what is normally available.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>Fabrication</li>
+      <li>Broms_ResearchPsytrainers</li>
+    </prerequisites>
+    <hiddenPrerequisites>
+      <li>Machining</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>12.00</researchViewX>
+    <researchViewY>4.60</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef Name="Broms_Neuroformer" Abstract="True">
+        <defName>Broms_CraftNeuroformer</defName>
+        <label>Make Psylink Neuroformer</label>
+        <description>Make a psylink neuroformer.</description>
+        <jobString>Making psylink neuroformer.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>10000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <ingredients>
+        <li>
+            <filter>
+            <thingDefs>
+                <li>ComponentSpacer</li>
+            </thingDefs>
+            </filter>
+            <count>20</count>
+        </li>
+        <li>
+            <filter>
+            <thingDefs>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+            </filter>
+            <count>10</count>
+        </li>
+        <li>
+            <filter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+            </filter>
+            <count>50</count>
+        </li>
+        <li>
+            <filter>
+            <thingDefs>
+                <li>Plasteel</li>
+            </thingDefs>
+            </filter>
+            <count>50</count>
+        </li>
+        <li>
+            <filter>
+            <thingDefs>
+                <li>Uranium</li>
+            </thingDefs>
+            </filter>
+            <count>10</count>
+        </li>
+        </ingredients>
+        <fixedIngredientFilter>
+        <thingDefs>
+            <li>ComponentSpacer</li>
+            <li>ComponentIndustrial</li>
+            <li>Steel</li>
+            <li>Plasteel</li>
+            <li>Uranium</li>
+        </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+        <PsychicAmplifier>1</PsychicAmplifier>
+        </products>
+        <researchPrerequisite>Broms_ResearchNeuroformer</researchPrerequisite> ??
+        <skillRequirements>
+        <Intellectual>10</Intellectual>
+        </skillRequirements>
+        <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+         <li>FabricationBench</li>
+      </recipeUsers>
+	</RecipeDef>
+
+    <!-- Psytrainers Below -->
+
+        <RecipeDef Name="Broms_Psytrainer" Abstract="True">
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <effectWorking>Cook</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <workAmount>10000</workAmount>
+            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+            <ingredients>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>ComponentSpacer</li>
+                </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>Steel</li>
+                </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>Plasteel</li>
+                </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>Uranium</li>
+                </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            </ingredients>
+            <fixedIngredientFilter>
+            <thingDefs>
+                <li>ComponentSpacer</li>
+                <li>Steel</li>
+                <li>Plasteel</li>
+                <li>Uranium</li>
+            </thingDefs>
+            </fixedIngredientFilter>
+            <researchPrerequisite>Broms_ResearchPsytrainers</researchPrerequisite>
+            <skillRequirements>
+            <Intellectual>10</Intellectual>
+            </skillRequirements>
+            <workSkill>Intellectual</workSkill>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Painblock_Psytrainer</defName>
+            <label>Make Psytrainer (Painblock)</label>
+            <description>Make a psytrainer (Painblock).</description>
+            <jobString>Making psytrainer (Painblock).</jobString>
+            <products>
+                <Psytrainer_Painblock>1</Psytrainer_Painblock>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Stun_Psytrainer</defName>
+            <label>Make Psytrainer (Stun)</label>
+            <description>Make a psytrainer (Stun).</description>
+            <jobString>Making psytrainer (Stun).</jobString>
+            <products>
+                <Psytrainer_Stun>1</Psytrainer_Stun>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Burden_Psytrainer</defName>
+            <label>Make Psytrainer (Burden)</label>
+            <description>Make a psytrainer (Burden).</description>
+            <jobString>Making psytrainer (Burden).</jobString>
+            <products>
+                <Psytrainer_Burden>1</Psytrainer_Burden>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_BlindingPulse_Psytrainer</defName>
+            <label>Make Psytrainer (BlindingPulse)</label>
+            <description>Make a psytrainer (BlindingPulse).</description>
+            <jobString>Making psytrainer (BlindingPulse).</jobString>
+            <products>
+                <Psytrainer_BlindingPulse>1</Psytrainer_BlindingPulse>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_EntropyDump_Psytrainer</defName>
+            <label>Make Psytrainer (EntropyDump)</label>
+            <description>Make a psytrainer (EntropyDump).</description>
+            <jobString>Making psytrainer (EntropyDump).</jobString>
+            <products>
+                <Psytrainer_EntropyDump>1</Psytrainer_EntropyDump>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Beckon_Psytrainer</defName>
+            <label>Make Psytrainer (Beckon)</label>
+            <description>Make a psytrainer (Beckon).</description>
+            <jobString>Making psytrainer (Beckon).</jobString>
+            <products>
+                <Psytrainer_Beckon>1</Psytrainer_Beckon>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_VertigoPulse_Psytrainer</defName>
+            <label>Make Psytrainer (VertigoPulse)</label>
+            <description>Make a psytrainer (VertigoPulse).</description>
+            <jobString>Making psytrainer (VertigoPulse).</jobString>
+            <products>
+                <Psytrainer_VertigoPulse>1</Psytrainer_VertigoPulse>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_ChaosSkip_Psytrainer</defName>
+            <label>Make Psytrainer (ChaosSkip)</label>
+            <description>Make a psytrainer (ChaosSkip).</description>
+            <jobString>Making psytrainer (ChaosSkip).</jobString>
+            <products>
+                <Psytrainer_ChaosSkip>1</Psytrainer_ChaosSkip>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Skip_Psytrainer</defName>
+            <label>Make Psytrainer (Skip)</label>
+            <description>Make a psytrainer (Skip).</description>
+            <jobString>Making psytrainer (Skip).</jobString>
+            <products>
+                <Psytrainer_Skip>1</Psytrainer_Skip>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Wallraise_Psytrainer</defName>
+            <label>Make Psytrainer (Wallraise)</label>
+            <description>Make a psytrainer (Wallraise).</description>
+            <jobString>Making psytrainer (Wallraise).</jobString>
+            <products>
+                <Psytrainer_Wallraise>1</Psytrainer_Wallraise>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Smokepop_Psytrainer</defName>
+            <label>Make Psytrainer (Smokepop)</label>
+            <description>Make a psytrainer (Smokepop).</description>
+            <jobString>Making psytrainer (Smokepop).</jobString>
+            <products>
+                <Psytrainer_Smokepop>1</Psytrainer_Smokepop>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Focus_Psytrainer</defName>
+            <label>Make Psytrainer (Focus)</label>
+            <description>Make a psytrainer (Focus).</description>
+            <jobString>Making psytrainer (Focus).</jobString>
+            <products>
+                <Psytrainer_Focus>1</Psytrainer_Focus>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Berserk_Psytrainer</defName>
+            <label>Make Psytrainer (Berserk)</label>
+            <description>Make a psytrainer (Berserk).</description>
+            <jobString>Making psytrainer (Berserk).</jobString>
+            <products>
+                <Psytrainer_Berserk>1</Psytrainer_Berserk>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Invisibility_Psytrainer</defName>
+            <label>Make Psytrainer (Invisibility)</label>
+            <description>Make a psytrainer (Invisibility).</description>
+            <jobString>Making psytrainer (Invisibility).</jobString>
+            <products>
+                <Psytrainer_Invisibility>1</Psytrainer_Invisibility>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_BerserkPulse_Psytrainer</defName>
+            <label>Make Psytrainer (BerserkPulse)</label>
+            <description>Make a psytrainer (BerserkPulse).</description>
+            <jobString>Making psytrainer (BerserkPulse).</jobString>
+            <products>
+                <Psytrainer_BerserkPulse>1</Psytrainer_BerserkPulse>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_ManhunterPulse_Psytrainer</defName>
+            <label>Make Psytrainer (ManhunterPulse)</label>
+            <description>Make a psytrainer (ManhunterPulse).</description>
+            <jobString>Making psytrainer (ManhunterPulse).</jobString>
+            <products>
+                <Psytrainer_ManhunterPulse>1</Psytrainer_ManhunterPulse>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_MassChaosSkip_Psytrainer</defName>
+            <label>Make Psytrainer (MassChaosSkip)</label>
+            <description>Make a psytrainer (MassChaosSkip).</description>
+            <jobString>Making psytrainer (MassChaosSkip).</jobString>
+            <products>
+                <Psytrainer_MassChaosSkip>1</Psytrainer_MassChaosSkip>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Waterskip_Psytrainer</defName>
+            <label>Make Psytrainer (Waterskip)</label>
+            <description>Make a psytrainer (Waterskip).</description>
+            <jobString>Making psytrainer (Waterskip).</jobString>
+            <products>
+                <Psytrainer_Waterskip>1</Psytrainer_Waterskip>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Flashstorm_Psytrainer</defName>
+            <label>Make Psytrainer (Flashstorm)</label>
+            <description>Make a psytrainer (Flashstorm).</description>
+            <jobString>Making psytrainer (Flashstorm).</jobString>
+            <products>
+                <Psytrainer_Flashstorm>1</Psytrainer_Flashstorm>
+            </products>
+        </RecipeDef>
+
+            <defName>Broms_BulletShield_Psytrainer</defName>
+            <label>Make Psytrainer (BulletShield)</label>
+            <description>Make a psytrainer (BulletShield).</description>
+            <jobString>Making psytrainer (BulletShield).</jobString>
+            <products>
+                <Psytrainer_BulletShield>1</Psytrainer_BulletShield>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_SolarPinhole_Psytrainer</defName>
+            <label>Make Psytrainer (SolarPinhole)</label>
+            <description>Make a psytrainer (SolarPinhole).</description>
+            <jobString>Making psytrainer (SolarPinhole).</jobString>
+            <products>
+                <Psytrainer_SolarPinhole>1</Psytrainer_SolarPinhole>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_WordOfTrust_Psytrainer</defName>
+            <label>Make Psytrainer (WordOfTrust)</label>
+            <description>Make a psytrainer (WordOfTrust).</description>
+            <jobString>Making psytrainer (WordOfTrust).</jobString>
+            <products>
+                <Psytrainer_WordOfTrust>1</Psytrainer_WordOfTrust>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_WordOfJoy_Psytrainer</defName>
+            <label>Make Psytrainer (WordOfJoy)</label>
+            <description>Make a psytrainer (WordOfJoy).</description>
+            <jobString>Making psytrainer (WordOfJoy).</jobString>
+            <products>
+                <Psytrainer_WordOfJoy>1</Psytrainer_WordOfJoy>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_WordOfLove_Psytrainer</defName>
+            <label>Make Psytrainer (WordOfLove)</label>
+            <description>Make a psytrainer (WordOfLove).</description>
+            <jobString>Making psytrainer (WordOfLove).</jobString>
+            <products>
+                <Psytrainer_WordOfLove>1</Psytrainer_WordOfLove>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_WordOfSerenity_Psytrainer</defName>
+            <label>Make Psytrainer (WordOfSerenity)</label>
+            <description>Make a psytrainer (WordOfSerenity).</description>
+            <jobString>Making psytrainer (WordOfSerenity).</jobString>
+            <products>
+                <Psytrainer_WordOfSerenity>1</Psytrainer_WordOfSerenity>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_WordOfInspiration_Psytrainer</defName>
+            <label>Make Psytrainer (WordOfInspiration)</label>
+            <description>Make a psytrainer (WordOfInspiration).</description>
+            <jobString>Making psytrainer (WordOfInspiration).</jobString>
+            <products>
+                <Psytrainer_WordOfInspiration>1</Psytrainer_WordOfInspiration>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Farskip_Psytrainer</defName>
+            <label>Make Psytrainer (Farskip)</label>
+            <description>Make a psytrainer (Farskip).</description>
+            <jobString>Making psytrainer (Farskip).</jobString>
+            <products>
+                <Psytrainer_Farskip>1</Psytrainer_Farskip>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Neuroquake_Psytrainer</defName>
+            <label>Make Psytrainer (Neuroquake)</label>
+            <description>Make a psytrainer (Neuroquake).</description>
+            <jobString>Making psytrainer (Neuroquake).</jobString>
+            <products>
+                <Psytrainer_Neuroquake>1</Psytrainer_Neuroquake>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef Parent="Broms_Psytrainer">
+            <defName>Broms_Chunkskip_Psytrainer</defName>
+            <label>Make Psytrainer (Chunkskip)</label>
+            <description>Make a psytrainer (Chunkskip).</description>
+            <jobString>Making psytrainer (Chunkskip).</jobString>
+            <products>
+                <Psytrainer_Chunkskip>1</Psytrainer_Chunkskip>
+            </products>
+        </RecipeDef>
+    <!-- Psytrainers Above-->
+
+    <!-- Neurotrainers Below -->
+        <RecipeDef Name="Broms_Neurotrainer">
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <effectWorking>Cook</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <workAmount>10000</workAmount>
+            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+            <ingredients>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>ComponentSpacer</li>
+                </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>ComponentIndustrial</li>
+                </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>Steel</li>
+                </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>Plasteel</li>
+                </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                <thingDefs>
+                    <li>Uranium</li>
+                </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            </ingredients>
+            <fixedIngredientFilter>
+            <thingDefs>
+                <li>ComponentSpacer</li>
+                <li>ComponentIndustrial</li>
+                <li>Steel</li>
+                <li>Plasteel</li>
+                <li>Uranium</li>
+            </thingDefs>
+            </fixedIngredientFilter>
+            <researchPrerequisite>Broms_ResearchNeuroformer</researchPrerequisite> ??
+            <skillRequirements>
+            <Intellectual>10</Intellectual>
+            </skillRequirements>
+            <workSkill>Intellectual</workSkill>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeShootingNeurotrainer</defName>
+            <label>Make Neurotrainer (Shooting)</label>
+            <description>Make a Neurotrainer (Shooting).</description>
+            <jobString>Making Neurotrainer (Shooting).</jobString>
+            <products>
+            <Neurotrainer_Shooting>1</Neurotrainer_Shooting>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeMeleeNeurotrainer</defName>
+            <label>Make Neurotrainer (Melee)</label>
+            <description>Make a Neurotrainer (Melee).</description>
+            <jobString>Making Neurotrainer (Melee).</jobString>
+            <products>
+            <Neurotrainer_Melee>1</Neurotrainer_Melee>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeConstructionNeurotrainer</defName>
+            <label>Make Neurotrainer (Construction)</label>
+            <description>Make a Neurotrainer (Construction).</description>
+            <jobString>Making Neurotrainer (Construction).</jobString>
+            <products>
+            <Neurotrainer_Construction>1</Neurotrainer_Construction>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeMiningNeurotrainer</defName>
+            <label>Make Neurotrainer (Mining)</label>
+            <description>Make a Neurotrainer (Mining).</description>
+            <jobString>Making Neurotrainer (Mining).</jobString>
+            <products>
+            <Neurotrainer_Mining>1</Neurotrainer_Mining>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeCookingNeurotrainer</defName>
+            <label>Make Neurotrainer (Cooking)</label>
+            <description>Make a Neurotrainer (Cooking).</description>
+            <jobString>Making Neurotrainer (Cooking).</jobString>
+            <products>
+            <Neurotrainer_Cooking>1</Neurotrainer_Cooking>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakePlantsNeurotrainer</defName>
+            <label>Make Neurotrainer (Plants)</label>
+            <description>Make a Neurotrainer (Plants).</description>
+            <jobString>Making Neurotrainer (Plants).</jobString>
+            <products>
+            <Neurotrainer_Plants>1</Neurotrainer_Plants>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeAnimalsNeurotrainer</defName>
+            <label>Make Neurotrainer (Animals)</label>
+            <description>Make a Neurotrainer (Animals).</description>
+            <jobString>Making Neurotrainer (Animals).</jobString>
+            <products>
+            <Neurotrainer_Animals>1</Neurotrainer_Animals>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeCraftingNeurotrainer</defName>
+            <label>Make Neurotrainer (Crafting)</label>
+            <description>Make a Neurotrainer (Crafting).</description>
+            <jobString>Making Neurotrainer (Crafting).</jobString>
+            <products>
+            <Neurotrainer_Crafting>1</Neurotrainer_Crafting>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeArtisticNeurotrainer</defName>
+            <label>Make Neurotrainer (Artistic)</label>
+            <description>Make a Neurotrainer (Artistic).</description>
+            <jobString>Making Neurotrainer (Artistic).</jobString>
+            <products>
+            <Neurotrainer_Artistic>1</Neurotrainer_Artistic>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeMedicalNeurotrainer</defName>
+            <label>Make Neurotrainer (Medical)</label>
+            <description>Make a Neurotrainer (Medical).</description>
+            <jobString>Making Neurotrainer (Medical).</jobString>
+            <products>
+            <Neurotrainer_Medicine>1</Neurotrainer_Medicine>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeSocialNeurotrainer</defName>
+            <label>Make Neurotrainer (Social)</label>
+            <description>Make a Neurotrainer (Social).</description>
+            <jobString>Making Neurotrainer (Social).</jobString>
+            <products>
+            <Neurotrainer_Social>1</Neurotrainer_Social>
+            </products>
+        </RecipeDef>
+
+        <RecipeDef ParentName="Broms_Neurotrainer">
+            <defName>MakeIntellectualNeurotrainer</defName>
+            <label>Make Neurotrainer (Intellectual)</label>
+            <description>Make a Neurotrainer (Intellectual).</description>
+            <jobString>Making Neurotrainer (Intellectual).</jobString>
+            <products>
+            <Neurotrainer_Intellectual>1</Neurotrainer_Intellectual>
+            </products>
+        </RecipeDef>
+    <!-- Neurotrainers Above -->
+
+</Defs>
