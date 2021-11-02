@@ -6,7 +6,7 @@
     <label>Psylink Neuroformers</label>
     <description>Manufacture psylink neuoformers of your own to create psycasters.</description>
     <baseCost>2000</baseCost>
-    <techLevel>Ultra</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>AdvancedFabrication</li>
     </prerequisites>
@@ -23,7 +23,7 @@
     <label>Psylink Neurotrainers</label>
     <description>Manufacture neurotrainers of your own for training skills.</description>
     <baseCost>2000</baseCost>
-    <techLevel>Ultra</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>AdvancedFabrication</li>
     </prerequisites>
@@ -40,7 +40,7 @@
     <label>Psytrainers</label>
     <description>Manufacture psytrainers of your own for training psycasts.</description>
     <baseCost>2000</baseCost>
-    <techLevel>Ultra</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>AdvancedFabrication</li>
     </prerequisites>
