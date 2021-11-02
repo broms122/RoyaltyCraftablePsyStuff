@@ -15,7 +15,7 @@
     <defName>Broms_ResearchFSFPsytrainers</defName>
     <label>FSF Psytrainers</label>
     <description>Manufacture FSF psytrainers of your own for training psycasts beyond what is normally available.</description>
-    <baseCost>2000</baseCost>
+    <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>AdvancedFabrication</li>
