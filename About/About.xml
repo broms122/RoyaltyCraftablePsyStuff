@@ -6,7 +6,7 @@
 		<li>1.3</li>
 	</supportedVersions>
 	<packageId>Broms.RoyaltyCraftablePsyStuff</packageId>
-	<description>Adds FSF Bionics HP stuff to SNS' bionics.</description>
+	<description>Adds craftable psytrainers/neurotrainers/neuroformers. Optional support for More Psycasts mod.</description>
     <loadAfter>
         <li>Royalty</li>
     </loadAfter>
